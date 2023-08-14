@@ -1,0 +1,59 @@
+body{
+ min-height: 100%;
+background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t2/1842936-fundo-azul-escuro-no-estilo-poligonal-vetor.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+.container-estrelas {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden !important;
+}
+
+
+
+.estrelas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+ background: fixed;
+}
+
+.estrelas_animation {
+    animation-name: estrelas_animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    pointer-events: none;
+   
+}
+
+@keyframes estrelas_animation {
+    0% {
+        transform: translate(0%, 0);
+    }
+
+    50% {
+        transform: translate(0, -550px);
+    }
+
+    100% {
+        transform: translate(0, -1100px);
+    }
+}
+
+
+.animation{
+    max-width:500px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+
+}
+
+
+
